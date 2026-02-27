@@ -1,0 +1,16 @@
+@import "./fonts/stylesheet.css";
+
+.body{
+  display: grid;
+  grid-template-columns: 90vw;
+  grid-template-rows: 10vh 80vh 10vh;
+  justify-content: center;
+}
+
+.header{
+  font-family: "Advent", "Gill Sans", sans-serif;
+}
+
+.footer__text{
+  font-family: "Advent", "Gill Sans", sans-serif;
+}
