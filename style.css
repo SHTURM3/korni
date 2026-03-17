@@ -5,7 +5,7 @@
 /* #50c878 линии рамки полоски загрузки второстепенные детали*/
 /* #3a3a3a текст */
 
-h1, h2, h3, h4, h5, h6{
+h1, h2, h3, h4, h5, h6, p{
   padding: 0;
   margin: 0;
 }
@@ -14,12 +14,18 @@ h1, h2, h3, h4, h5, h6{
   display: grid;
   grid-template-columns: 100dvw;
   grid-template-rows: 10vh 80vh 10vh;
+  grid-template-areas:
+    "header"
+    "main"
+    "footer";
   justify-content: center;
   margin: 0;
 }
 
 .header{
-  font-family: "Advent", "Gill Sans", sans-serif;
+  grid-area: header;
+
+  font-family: "Advent Bold", "Gill Sans", sans-serif;
   background-color: #f5f0e6;
   color: #904d30;
   border-radius: 5px;
@@ -33,8 +39,49 @@ h1, h2, h3, h4, h5, h6{
   padding: 0;
 }
 
+.main{
+  grid-area: main;
+}
+
+.ftree{}
+.member{
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: 30% 70%;
+	max-inline-size: 500px;
+	border: 1px solid #50c878;
+	border-radius: 10px;
+}
+.member__info{
+  grid-column: span 3;
+  grid-row: 1/2;
+}
+.member__img{
+  inline-size: fit-content;
+  border: 1px solid red;
+}
+.member__img img{
+  max-inline-size: 150px;
+  inline-size: 100%;
+  object-fit: cover;
+}
+.member__name{
+  font-family: "Advent Regular", "Gill Sans", sans-serif;
+  font-size: 14px;
+  color: #3a3a3a;
+}
+.member__about{
+  font-family: "Advent Normal", "Gill Sans", sans-serif;
+  font-size: 14px;
+  color: #3a3a3a;
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
 .footer{
-  font-family: "Advent", "Gill Sans", sans-serif;
+  grid-area: footer;
+
+  font-family: "Advent Normal", "Gill Sans", sans-serif;
   background-color: #f5f0e6;
   color: #904d30;
   border-radius: 5px;
@@ -45,5 +92,5 @@ h1, h2, h3, h4, h5, h6{
 }
 
 .footer__text{
-  font-family: "Advent", "Gill Sans", sans-serif;
+  font-family: "Advent Normal", "Gill Sans", sans-serif;
 }

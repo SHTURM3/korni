@@ -1,5 +1,5 @@
 @font-face {
-    font-family: 'Advent';
+    font-family: 'Advent Bold';
     src: url('./AdventPro-Bold.woff2') format('woff2'),
         url('./AdventPro-Bold.woff') format('woff');
     font-weight: bold;
@@ -8,7 +8,7 @@
 }
 
 @font-face {
-    font-family: 'Advent';
+    font-family: 'Advent Regular';
     src: url('./AdventPro-Medium.woff2') format('woff2'),
         url('./AdventPro-Medium.woff') format('woff');
     font-weight: 500;
@@ -17,7 +17,7 @@
 }
 
 @font-face {
-    font-family: 'Advent';
+    font-family: 'Advent Normal';
     src: url('./AdventPro-Regular.woff2') format('woff2'),
         url('./AdventPro-Regular.woff') format('woff');
     font-weight: normal;
