@@ -1,7 +1,7 @@
 @import "./fonts/stylesheet.css";
 
 :root{
-  --bg-color: #f5f0e6;
+  --bg-color: linear-gradient(220.55deg, #FFF6EB 0%, #DFD1C5 100%);
   --ui-color: #904d30;
   --accent-color: #50c878;
   --text-color: #3a3a3a;
@@ -19,31 +19,39 @@ h1, h2, h3, h4, h5, h6, p{
 
 .body{
   display: grid;
-  grid-template-columns: 100dvw;
-  grid-template-rows: 10vh 80vh 10vh;
   grid-template-areas:
-    "header"
-    "main"
-    "footer";
-  justify-content: center;
+    "header header header"
+    "main main main"
+    "footer footer footer";
+	inline-size: 100dvw;
+	row-gap: 50px;
   margin: 0;
+  background: var(--bg-color);
 }
 
 .header{
   grid-area: header;
 
-  font-family: var(--font-bold);
-  background-color: var(--bg-color);
-  color: var(--ui-color);
-  border-radius: 5px;
-  padding-inline: 10px;
-
-  display: flex;
-  align-items: center;
+	display: grid;
+	grid-template-columns: 25dvw 50dvw 25dvw;
+	grid-template-rows: 10dvh;
+  justify-items: center;
 }
 
 .page-title{
   padding: 0;
+  font-family: var(--font-bold);
+  color: var(--ui-color);
+  font-size: 25px;
+	align-self: center;
+}
+
+.logo{
+	inline-size: 100px;
+	block-size: 100px;
+	border: 10px solid #ffffff;
+	border-radius: 50%;
+  margin-block-start: 5px;
 }
 
 .main{
@@ -63,6 +71,8 @@ h1, h2, h3, h4, h5, h6, p{
 	border: 3px solid var(--accent-color);
 	border-radius: 10px;
   place-items: center;
+
+  background-color: #fdf6f6;
 
 	position: relative;
 	margin-block-start: 130px;
@@ -108,17 +118,15 @@ h1, h2, h3, h4, h5, h6, p{
 
 .footer{
   grid-area: footer;
-
-  font-family: var(--font-normal);
-  background-color: var(--bg-color);
-  color: var(--ui-color);
-  border-radius: 5px;
-  padding-inline: 10px;
-
-  display: flex;
-  align-items: center;
+  display: grid;
+	grid-template-columns: 25dvw 50dvw 25dvw;
+	grid-template-rows: 10dvh;
+  justify-items: center;
 }
 
 .footer__text{
   font-family: var(--font-normal);
+  color: var(--ui-color);
+  grid-column: 2/3;
+  align-self: center;
 }
