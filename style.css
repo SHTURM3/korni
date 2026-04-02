@@ -23,6 +23,10 @@ h1, h2, h3, h4, h5, h6, p{
     "header header header"
     "main main main"
     "footer footer footer";
+<<<<<<< HEAD
+=======
+	block-size: 100dvh;
+>>>>>>> ee3b32f84ae2cdf8ce801e19601bb27de445e2bb
 	inline-size: 100dvw;
 	row-gap: 50px;
   margin: 0;
@@ -36,6 +40,10 @@ h1, h2, h3, h4, h5, h6, p{
 	grid-template-columns: 25dvw 50dvw 25dvw;
 	grid-template-rows: 10dvh;
   justify-items: center;
+<<<<<<< HEAD
+=======
+  background: var(--bg-color);
+>>>>>>> ee3b32f84ae2cdf8ce801e19601bb27de445e2bb
 }
 
 .page-title{
@@ -122,6 +130,12 @@ h1, h2, h3, h4, h5, h6, p{
 	grid-template-columns: 25dvw 50dvw 25dvw;
 	grid-template-rows: 10dvh;
   justify-items: center;
+<<<<<<< HEAD
+=======
+
+  background: var(--bg-color);
+  border-radius: 5px;
+>>>>>>> ee3b32f84ae2cdf8ce801e19601bb27de445e2bb
 }
 
 .footer__text{
